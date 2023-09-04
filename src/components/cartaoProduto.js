@@ -6,7 +6,7 @@ export function renderizarCatalago() {
     const cartaoProduto = `
         <div id="card-produto-${produtoCatalogo.id}" class="flex flex-col justify-between border-solid pb-2  w-48 m-2 group shadow-xl shadow-slate-400 rounded-lg p-2">
           <img
-            src="./src/assets/imgs/${produtoCatalogo.imagem}"
+            src="./src/assets/imgs/${produtoCatalogo.imagem}.jpg"
             alt="Produto ${produtoCatalogo.id} do Magazine Hashtag."
             style="height: 300px"
             class="group-hover:scale-110 duration-300 my-3 rounded-lg" 
