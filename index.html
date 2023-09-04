@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magazine Hashtag</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<!-- CARRINHO ESTRUTRA -->
+
+<body class="flex flex-col bg-stone-200 ">
+  <section id="carrinho"
+    class="flex flex-col justify-between fixed top-0 right-[-360px] w-[360px] z-50 border-l border-slate-200  transition-all duration-300 p-5 bg-slate-950 h-screen  text-cyan-50   shadow-slate-950 shadow-xl ">
+    <div id="cabecalho" class=" flex justify-between m-4">
+      <p>Meu carrinho</p>
+      <button id="fechar-carrinho"><i class="fa-regular fa-circle-xmark"></i></button>
+    </div>
+    <section id="produtos-carrinho" class="h-3/5 overflow-y-auto p-1 ">
+      <!-- <article class="flex h-24 bg-slate-100 rounded-lg relative">
+        <button id="fechar-carrinho"><i
+            class="absolute right-2 top-2 fa-regular fa-circle-xmark text-slate-500 hover:text-slate-900"></i></button>
+        <img src="./assets/imgs/product-1.jpg" alt="Camisa Larga com Bolsos" class="p-1">
+        <div class=" p-1">
+          <p class="text-slate-800 text-sm">Camisa Larga com Bolsos</p>
+          <p class="text-slate-400 text-xs">Tamanho: M</p>
+          <p class="text-green-700 text-lg">$70</p>
+
+        </div>
+      </article> -->
+    </section>
+    <p id="preco-total">R$200</p>
+    <button class="bg-slate-200 text-slate-900 p-1">Finalizar Compra</button>
+  </section>
+
+  <!--Header da pagina-->
+  <header class="flex justify-between bg-slate-950 px-8 py-4 sticky top-0 shadow-slate-400 shadow-lg z-10">
+    <img src=" ./assets/imgs/hashtag.svg" alt="Logo do Magazine hashtag" class="h-16">
+    <div class="text-slate-200 flex gap-2 items-end mx-2">
+      <button class="mr-2"><i class="fa-solid fa-user "></i></button>
+      <button id="abrir-carrinho" class="mx-2"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+  </header>
+  <!-- Conteúdo Principal - Main - exibe os produtos -->
+  <main class="">
+    <section id="container-product" class="flex flex-wrap justify-center gap-10">
+
+
+    </section>
+  </main>
+  <footer></footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
